@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free movie catalogue for you">
+  <link rel="icon" href="./favicon.png">
+ 
+  <title>Movie Catalogue</title>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-        </form>
-        <div id="error-message"></div>
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
     </div>
-    <script src="script.js"></script>
+    <div class="app-bar__brand">
+      <h1>Sekolah Sepak Bola</h1>
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#/login">Login</a></li>
+        <li><a href="#/galery">Galery</a></li>
+        <li><a href="#/about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main id="mainContent"></main>
+
 </body>
 </html>
